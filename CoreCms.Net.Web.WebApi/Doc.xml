@@ -1329,5 +1329,40 @@
             请求验证错误处理
             </summary>
         </member>
+        <member name="T:CoreCms.Net.Web.WebApi.Infrastructure.SucceededStateExpireHandler">
+            <summary>
+            已完成的job设置过期，防止数据无限增长
+            </summary>
+        </member>
+        <member name="F:CoreCms.Net.Web.WebApi.Infrastructure.SucceededStateExpireHandler.JobExpirationTimeout">
+            <summary>
+            数据过期时间
+            </summary>
+        </member>
+        <member name="M:CoreCms.Net.Web.WebApi.Infrastructure.SucceededStateExpireHandler.#ctor(System.Int32)">
+            <summary>
+            完成的项目过期状态处理
+            </summary>
+            <param name="jobExpirationTimeout"></param>
+        </member>
+        <member name="P:CoreCms.Net.Web.WebApi.Infrastructure.SucceededStateExpireHandler.StateName">
+            <summary>
+            状态名称
+            </summary>
+        </member>
+        <member name="M:CoreCms.Net.Web.WebApi.Infrastructure.SucceededStateExpireHandler.Apply(Hangfire.States.ApplyStateContext,Hangfire.Storage.IWriteOnlyTransaction)">
+            <summary>
+            应用状态
+            </summary>
+            <param name="context"></param>
+            <param name="transaction"></param>
+        </member>
+        <member name="M:CoreCms.Net.Web.WebApi.Infrastructure.SucceededStateExpireHandler.Unapply(Hangfire.States.ApplyStateContext,Hangfire.Storage.IWriteOnlyTransaction)">
+            <summary>
+            不应用状态
+            </summary>
+            <param name="context"></param>
+            <param name="transaction"></param>
+        </member>
     </members>
 </doc>

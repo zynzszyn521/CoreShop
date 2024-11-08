@@ -102,7 +102,7 @@
     "quickapp" : {},
     /* 快应用特有相关 */
     "mp-weixin" : {
-        "appid" : "wx9ffab147a56e9424",
+        "appid" : "wx5a9f8917d53ec0d6",
         "setting" : {
             "urlCheck" : true,
             "postcss" : true,
@@ -131,7 +131,7 @@
         "devServer" : {
             "port" : 80,
             "disableHostCheck" : true,
-            "https" : true
+            "https" : false
         },
         "sdkConfigs" : {
             "maps" : {
